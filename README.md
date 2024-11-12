@@ -30,7 +30,7 @@ Steps to Execute the Code
   Execute the Glue job via the AWS Glue Console. Monitor the job’s progress to ensure it runs successfully.
 6. Access Processed Data
 
-amazon-product-etl
+amazon-product-etl/
 ├── resource/                  # Credentials and configuration (keep out of version control)
 │   └── credentials.py         # (Do not commit to version control!)
 ├── src/                       # Source code for AWS Glue job
