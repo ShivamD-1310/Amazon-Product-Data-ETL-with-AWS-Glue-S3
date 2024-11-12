@@ -31,17 +31,17 @@ Steps to Execute the Code
 6. Access Processed Data
 
 amazon-product-etl/
-├── resource/                  # Credentials and configuration (keep out of version control)
-│   └── credentials.py         # (Do not commit to version control!)
-├── src/                       # Source code for AWS Glue job
-│   └── glue_script.py         # Main AWS Glue ETL script
-├── docker/                    # Docker setup for local execution
-│   ├── Dockerfile             # Dockerfile for local Glue script execution
-│   └── glue_script.py         # Local Glue script to run in Docker
-├── main.py                    # Main script to trigger the ETL process (outside of src)
-├── s3_session.py              # Helper module for managing S3 sessions (outside of src)
-├── read_data.py               # Helper module for reading raw data from S3 (outside of src)
-├── requirements.txt           # Python dependencies (if any)
-└── README.md                  # This file
+├── resource/                  
+│   └── credentials.py         
+├── src/                      
+│   └── glue_script.py         
+├── docker/                   
+│   ├── Dockerfile             
+│   └── glue_script.py         
+├── main.py                    
+├── s3_session.py              
+├── read_data.py               
+├── requirements.txt           
+└── README.md                  
 
         
