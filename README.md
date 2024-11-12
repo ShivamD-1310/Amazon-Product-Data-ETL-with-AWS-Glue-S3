@@ -3,25 +3,25 @@ This project implements an ETL pipeline that fetches Amazon product data from Ra
 Note on Credentials Management:
 While the credentials were originally intended to be stored in a separate credentials.py file, I encountered an issue accessing them during the development process. As a result, I temporarily added the credentials directly into the Glue script. This is not a recommended practice for production environments. In future iterations, the credentials should be securely managed using environment variables, AWS IAM roles, or AWS Secrets Manager.
 
-Features
-Fetches raw Amazon product data from RapidAPI.
-Cleans and transforms data using AWS Glue.
-Stores the processed data in Amazon S3 in Parquet format:
+**Features**
+1.Fetches raw Amazon product data from RapidAPI.
+2.Cleans and transforms data using AWS Glue.
+3.Stores the processed data in Amazon S3 in Parquet format:
       category: Product category information.
       details: Product details such as name, price, and description.
       delivery_info: Delivery and shipping details.
-Docker is used for running the Glue script locally before execution on AWS Glue.
+4.Docker is used for running the Glue script locally before execution on AWS Glue.
 
-Technology Stack
-AWS Glue for serverless ETL tasks.
-Amazon S3 for storing raw and transformed data.
-RapidAPI for accessing Amazon product data.
-Docker for local execution of the Glue script.
-Python and Boto3 for AWS interaction and API calls.
-Parquet format for efficient data storage.
+**Technology Stack**
+1.AWS Glue for serverless ETL tasks.
+2.Amazon S3 for storing raw and transformed data.
+3.RapidAPI for accessing Amazon product data.
+4.Docker for local execution of the Glue script.
+5.Python and Boto3 for AWS interaction and API calls.
+6.Parquet format for efficient data storage.
 
 
-Steps to Execute the Code
+**Steps to Execute the Code**
 1. Clone the Repository
 2. Set Up AWS Credentials
 3. Docker Setup (Optional, for Local Testing)
@@ -30,6 +30,8 @@ Steps to Execute the Code
   Execute the Glue job via the AWS Glue Console. Monitor the job’s progress to ensure it runs successfully.
 6. Access Processed Data
 
+
+**Project Structure**
 amazon-product-etl
 
 ├── resource/                  
