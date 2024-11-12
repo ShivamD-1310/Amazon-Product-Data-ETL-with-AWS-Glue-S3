@@ -31,6 +31,7 @@ Steps to Execute the Code
 6. Access Processed Data
 
 amazon-product-etl
+
 ├── resource/                  
 │   └── credentials.py         
 ├── src/                      
