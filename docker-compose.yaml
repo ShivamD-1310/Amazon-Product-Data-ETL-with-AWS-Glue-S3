@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  glue:
+    image: amazon/aws-glue-libs:glue_libs_4.0.0_image_01
+    container_name: glue-container
+    environment:
+      DISABLE_SSL: "true"
+    command: pyspark  
+    tty: true
+    ports:
+      - 4040:4040
+    volumes:
+      - /home/glue_user/workspace/ 
+
+
